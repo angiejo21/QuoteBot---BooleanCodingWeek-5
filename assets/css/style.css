@@ -1,0 +1,51 @@
+/* 
+STYLE GUIDE:
+
+    Colore blue: #1212b2
+    Colore giallo: #e9f45b
+    Colore azzurro sfondo pagina: #6885e0
+    Colore azzurro : #a1d2ff
+    Colore rosa: #ffaafb
+    Colore sfondo loading e modale: rgba(161, 210, 255, 0.8) 
+*/
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* GENERALI */
+html {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #6885e0;
+  color: #1212b2;
+}
+h1 {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+/* HEADER */
+header {
+  background-color: #e9f45b;
+  text-align: center;
+  padding: 32px;
+}
+/* CHARACTER */
+.character {
+  height: 112px;
+  width: 112px;
+  border-radius: 50%;
+  border: 2px solid #1212b2;
+  background-color: #a1d2ff;
+  overflow: hidden;
+}
+.character img {
+  max-width: 100%;
+}
+.characters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 40px 40px;
+}
