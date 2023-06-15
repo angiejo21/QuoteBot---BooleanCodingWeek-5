@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Stile -->
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>ChatBot</title>
+    <!-- Manifest -->
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" type="image/ico" href="/assets/img/favicon.ico" />
+    <title>Quote from a Bot</title>
   </head>
   <body>
     <header>
@@ -59,24 +64,44 @@
       </div>
       <!-- modale -->
       <div class="modal modal-hidden">
-        <div class="modal-box">
-          <div class="modal-close">
-            <img src="/assets/img/close.svg" alt="Chiudi il modale" />
+        <div class="modal-wrapper">
+          <div class="modal-box">
+            <div class="modal-close">
+              <img src="/assets/img/close.svg" alt="Chiudi il modale" />
+            </div>
+            <div class="modal-content">
+              <div class="character" data-character="Ash Ketchum">
+                <img src="/assets/img/ash-ketchum.png" alt="Ash Ketchum" />
+              </div>
+              <h2>Homer Simpson</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quidem, asperiores.
+              </p>
+              <code
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                veritatis rem explicabo? Sunt, dolorem id?</code
+              >
+            </div>
           </div>
-          <div class="modal-content">
-            <h2>Homer Simpson</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
-              asperiores.
-            </p>
-            <code
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              veritatis rem explicabo? Sunt, dolorem id?</code
-            >
+          <div class="modal-actions">
+            <button id="save">
+              <img src="assets/img/save.svg" alt="salva" />Salva
+            </button>
+            <button id="share">
+              <img src="assets/img/share.svg" alt="condividi" />Condividi
+            </button>
           </div>
         </div>
       </div>
     </main>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

@@ -19,6 +19,7 @@ html {
   font-family: "Space Grotesk", sans-serif;
   background-color: #6885e0;
   color: #1212b2;
+  text-align: center;
 }
 h1 {
   font-size: 35px;
@@ -35,10 +36,23 @@ p {
   max-width: 540px;
   margin: 0 auto;
 }
+
+button {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 12px;
+  background-color: #e9f45b;
+  border: 2px solid #1212b2;
+  color: #1212b2;
+  font-size: 18px;
+  font-weight: 700;
+}
+button > img {
+  height: 16px;
+  margin-right: 10px;
+}
 /* HEADER */
 header {
   background-color: #e9f45b;
-  text-align: center;
   padding: 32px;
 }
 /* CHARACTER */
@@ -49,6 +63,7 @@ header {
   border: 2px solid #1212b2;
   background-color: #a1d2ff;
   overflow: hidden;
+  display: inline-block;
 }
 .character img {
   max-width: 100%;
@@ -89,13 +104,27 @@ header {
   background-color: rgba(161, 210, 255, 0.8);
   z-index: 999;
 }
+.modal-wrapper {
+  max-width: 512px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.modal-actions {
+  display: flex;
+  gap: 12px;
+}
+.modal-actions > * {
+  width: 100%;
+}
 .modal-box {
   background-color: #ffffff;
-  padding: 20px;
   border: 2px solid #1212b2;
   max-width: 512px;
   margin: 24px auto;
   position: relative;
+}
+.modal-content {
+  padding: 20px;
 }
 .modal-close {
   background-color: #ffaafb;
